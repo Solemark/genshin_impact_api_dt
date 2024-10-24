@@ -19,9 +19,9 @@ Response _generalHandler(Request request) => Response(
       200,
       headers: _jsonHeaders,
       body: _jsonEncode({
-        "artifacts": "/artifacts",
-        "characters": "/characters",
-        "weapons": "/weapons",
+        "artifacts": "artifacts",
+        "characters": "characters",
+        "weapons": "weapons",
       }),
     );
 
