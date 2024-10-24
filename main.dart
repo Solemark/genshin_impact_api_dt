@@ -14,33 +14,48 @@ final _jsonHeaders = {
   'Cache-Control': 'no-store',
 };
 
-String _jsonEncode(Object? data) => JsonEncoder.withIndent(' ').convert(data);
-Response _generalHandler(Request request) => Response(
-      200,
-      headers: _jsonHeaders,
-      body: _jsonEncode({
-        "artifacts": "artifacts",
-        "characters": "characters",
-        "weapons": "weapons",
-      }),
-    );
-
-Future<List<String>> _getListData(String type) async {
-  List<String> res = await Directory("data/$type")
-      .list()
-      .map((element) => element.toString().split("/").last.replaceAll(".json'", ""))
-      .toList();
-  res.sort();
-  return res;
+String _jsonEncode(Object data) => JsonEncoder.withIndent(' ').convert(data);
+Response _generalHandler(Request request) {
+  return Response(
+    200,
+    headers: _jsonHeaders,
+    body: _jsonEncode({
+      "artifacts": "artifacts",
+      "characters": "characters",
+      "weapons": "weapons",
+    }),
+  );
 }
 
-Future<Response> _typeHandler(Request request, String type) async =>
-    Response(200, headers: _jsonHeaders, body: _jsonEncode(await _getListData(type)));
+Future<Object> _getListData(String type) async {
+  try {
+    List<String> res = await Directory("data/$type")
+        .list()
+        .map((element) => element.toString().split("/").last.replaceAll(".json'", ""))
+        .toList();
+    res.sort();
+    return res;
+  } catch (e) {
+    return _jsonEncode("directory: $type not found");
+  }
+}
 
-Future<String> _getData(String type, String name) async => await File("data/$type/$name.json").readAsString();
+Future<Response> _typeHandler(Request request, String type) async {
+  Object res = await _getListData(type);
+  return Response(200, headers: _jsonHeaders, body: _jsonEncode(res));
+}
 
-Future<Response> _nameHandler(Request request, String type, String name) async =>
-    Response(200, headers: _jsonHeaders, body: await _getData(type, name));
+Future<String> _getData(String type, String name) async {
+  try {
+    return await File("data/$type/$name.json").readAsString();
+  } on PathNotFoundException {
+    return _jsonEncode("path: $type/$name not found");
+  }
+}
+
+Future<Response> _nameHandler(Request request, String type, String name) async {
+  return Response(200, headers: _jsonHeaders, body: await _getData(type, name));
+}
 
 Future<void> main() async {
   final int port = 8080;
