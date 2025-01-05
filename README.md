@@ -2,4 +2,4 @@
 
 run with:
 
-    dart run main.dart
+    dart src/main.dart
