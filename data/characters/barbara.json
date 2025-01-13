@@ -17,31 +17,31 @@
             "description": "Normal Attack: Performs up to 4 water splash attacks that deal Hydro DMG. Charged Attack: Consumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time. Plunging Attack: Gathering the might of Hydro, Barbara plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Hydro DMG upon impact with the ground."
         },
         {
-            "name": "Let the Show Begin♪",
+            "name": "Let the Show Begin",
             "type": "elemental_skill",
             "description": "Summons water droplets resembling musical notes that form a Melody Loop, dealing Hydro DMG to surrounding opponents and applying the Wet status to them. Melody Loop: On hit, Barbara's Normal Attacks heal your own party members and nearby teammates for a certain amount of HP, which scales with Barbara's Max HP. On hit, Barbara's Charged Attack generates 4 times the amount of healing. Periodically regenerates your own active character's HP. Applies the Wet status to the character and to opponents who come in contact with them."
         },
         {
-            "name": "Shining Miracle♪",
+            "name": "Shining Miracle",
             "type": "elemental_burst",
             "description": "Heals your own party members and nearby teammates for a large amount of HP that scales with Barbara's Max HP."
         }
     ],
     "passives": [
         {
-            "name": "With My Whole Heart♪",
+            "name": "With My Whole Heart",
             "type": "passive_asc_0",
             "description": "When a Perfect Cooking is achieved on a dish with restorative effects, Barbara has a 12% chance to obtain double the product."
         },
         {
             "name": "Glorious Season",
             "type": "passive_asc_1",
-            "description": "The Stamina Consumption of characters within Let the Show Begin♪'s Melody Loop is reduced by 12%."
+            "description": "The Stamina Consumption of characters within Let the Show Begin's Melody Loop is reduced by 12%."
         },
         {
             "name": "Encore",
             "type": "passive_asc_4",
-            "description": "When your active character gains an Elemental Orb/Particle, the duration of the Melody Loop of Let the Show Begin♪ is extended by 1s. The maximum extension is 5s."
+            "description": "When your active character gains an Elemental Orb/Particle, the duration of the Melody Loop of Let the Show Begin is extended by 1s. The maximum extension is 5s."
         }
     ],
     "constellations": [
@@ -53,12 +53,12 @@
         {
             "name": "Vitality Burst",
             "type": "c2",
-            "description": "Decreases the CD of Let the Show Begin♪ by 15%. During the ability's duration, your active character gains a 15% Hydro DMG Bonus."
+            "description": "Decreases the CD of Let the Show Begin by 15%. During the ability's duration, your active character gains a 15% Hydro DMG Bonus."
         },
         {
             "name": "Star of Tomorrow",
             "type": "c3",
-            "description": "Increases the Level of Shining Miracle♪ by 3. Maximum upgrade level is 15."
+            "description": "Increases the Level of Shining Miracle by 3. Maximum upgrade level is 15."
         },
         {
             "name": "Attentiveness Be My Power",
@@ -68,7 +68,7 @@
         {
             "name": "The Purest Companionship",
             "type": "c5",
-            "description": "Increases the Level of Let the Show Begin♪ by 3. Maximum upgrade level is 15."
+            "description": "Increases the Level of Let the Show Begin by 3. Maximum upgrade level is 15."
         },
         {
             "name": "Dedicating Everything to You",

@@ -8,7 +8,7 @@
     "rarity": 4,
     "constellation": "Feles",
     "birthday": "18/01",
-    "description": "Despite being a bartender at the Cat's Tail, she loathes alcohol and will stop at nothing to ruin Mondstadt's wine industry — a feat easier said than done when her patrons absolutely love her drinks. She is the daughter of Draff, a hunter in Springvale.",
+    "description": "Despite being a bartender at the Cat's Tail, she loathes alcohol and will stop at nothing to ruin Mondstadt's wine industry - a feat easier said than done when her patrons absolutely love her drinks. She is the daughter of Draff, a hunter in Springvale.",
     "ascensionStat": "Cryo DMG",
     "skills": [
         {
@@ -56,7 +56,7 @@
             "description": "Increases Icy Paws' DMG by 15%, and increases its shield's DMG Absorption by 15%. Additionally, when paws hit their targets, creates a shield for other nearby characters on the field with 50% of the Icy Paws shield's DMG Absorption for 5s."
         },
         {
-            "name": "A—Another Round?",
+            "name": "A-Another Round?",
             "type": "c3",
             "description": "Increases the Level of Signature Mix by 3. Maximum upgrade level is 15."
         },
