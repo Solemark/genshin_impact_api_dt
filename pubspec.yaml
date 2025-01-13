@@ -2,6 +2,4 @@ name: 'genshin_impact_api'
 
 environment:
   sdk: '^3.6.0'
-dependencies:
-  shelf: ^1.4.2
-  shelf_router: ^1.1.4
+
